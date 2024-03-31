@@ -25,7 +25,7 @@ function  addItemsEntry (itemName,price){
         
         }
         inputFieldElement.value = '';
-    })
+    });
 
 }
 
