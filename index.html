@@ -42,36 +42,36 @@
             <div class=" mt-5 grid grid-cols-4 gap-4 items-center">
                 <!-- card section  -->
                 <div>
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div id="item1" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
-                          <img src="images/prod1.png" />
+                          <img  src="images/prod1.png" />
                         </figure>
                         <div class="text-2xl text-center ">
-                            <h3 class="font-semibold">Home Cooker</h3>
-                            <p>150.00tk</p>
+                            <h3 id="name1" class="font-semibold">K.Accessories</h3>
+                            <p id="price1">150.00tk</p>
                         </div>
                       </div>
                 </div>
                 <div>
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div id="item2" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="images/prod2.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="text-2xl text-center font-semibold"> </div>
                         <div class="text-2xl text-center">
-                            <h3>Home Cooker</h3>
-                         <p class="font-semibold">240.00tk</p>
+                            <h3 id="name2">K.Accessories</h3>
+                         <p id="price2" class="font-semibold">240.00tk</p>
                         </div>
                       </div>
                 </div>
                 <div>
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div id="item3" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="images/prod3.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="text-2xl text-center">
-                            <h3 class="font-semibold">Home Cooker</h3>
-                            <p>400.00tk</p>
+                            <h3 id="name3" class="font-semibold">Home Cooker</h3>
+                            <p id="price3">400.00tk</p>
                         </div>
 
                       </div>
@@ -81,18 +81,21 @@
                     <div>
                         <h1 class="mt-6 font-semibold">Have Coupon?</h1>
                     <input type="text" placeholder="Type here" class="input input-bordered max-w-xs">
-                    <button class="bg-secondary p-3 text-white font-semibold px-7">Apply</button>
+                    <button class="bg-secondary p-3 text-white font-semibold px-7 rounded">Apply</button>
                     </div>
-                    <div class=" mt-5 mb-5">
-                        <h1>Add Element Section</h1>
+                    <div id="element-container" class=" mt-5 mb-5">
+                        <h1>Added Items</h1>
                     </div>
                     <hr class="w-60 mb-4">
                     <div>
-                        <h1>Total Price : </h1>
+                        <h1>Total Price : <span id="totalPrice">0.00</span> tk</h1>
                         <h1>Discount : </h1>
                         <h1>Total : </h1>
+                        
                     </div>
                     <hr class="w-60 mt-4">
+                    <button class="btn btn-active btn-secondary mt-4 w-80 text-xl">Make Purchase</button>
+
                 </div>
             </div> 
             
@@ -105,33 +108,33 @@
             <h1 class="text-2xl font-bold mb-5">Sports Wear</h1>
             <div class="grid grid-cols-4 items-center justify-around text-2xl">
                 
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div id="item4" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="images/prod4.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="text-2xl text-center">
-                            <h3 class="font-semibold">Sports Back Cap</h3>
-                            <p>150.00tk</p>
+                            <h3 id="name4" class="font-semibold">Sports Back Cap</h3>
+                            <p id="price4">150.00tk</p>
                         </div>
 
                       </div>
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div id="item5" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="images/prod5.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="text-2xl text-center">
-                            <h3 class="font-semibold">Full Jersey Set</h3>
-                            <p>340.00tk</p>
+                            <h3 id="name5" class="font-semibold">Full Jersey Set</h3>
+                            <p id="price5">340.00tk</p>
                         </div>
 
                       </div>
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div id="item6" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="images/prod6.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="text-2xl text-center">
-                            <h3 class="font-semibold">Sports Cates</h3>
-                            <p>100.00tk</p>
+                            <h3 id="name6" class="font-semibold">Sports Cates</h3>
+                            <p id="price6">100.00tk</p>
                         </div>
 
                       </div>
@@ -146,33 +149,33 @@
             <h1 class="text-2xl font-bold mb-5">Furniture</h1>
             <div class="grid grid-cols-4 items-center justify-between text-2xl">
                 
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div id="item7" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="images/prod7.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="text-2xl text-center">
-                            <h3 class="font-semibold">Single Relax Chair</h3>
-                            <p>750.00tk</p>
+                            <h3 id="name7" class="font-semibold">Single Relax Chair</h3>
+                            <p id="price7">750.00tk</p>
                         </div>
 
                       </div>
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div id="item8" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="images/prod8.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="text-2xl text-center">
-                            <h3 class="font-semibold">Children Play</h3>
-                            <p>170.00tk</p>
+                            <h3 id="name8" class="font-semibold">Children Play</h3>
+                            <p id="price8">170.00tk</p>
                         </div>
 
                       </div>
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div id="item9" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="images/prod9.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="text-2xl text-center">
-                            <h3 class="font-semibold">Flexible Sofa</h3>
-                            <p>15000tk</p>
+                            <h3 id="name9" class="font-semibold">Flexible Sofa</h3>
+                            <p id="price9">15000tk</p>
                         </div>
 
                       </div>
@@ -186,7 +189,7 @@
             
 
     </main>
-
-    <script src="js/"></script>
+    <script src="js/utilites.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
