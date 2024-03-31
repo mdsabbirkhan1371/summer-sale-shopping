@@ -11,6 +11,21 @@ function  addItemsEntry (itemName,price){
     const preTotal = parseFloat(preTotalString);
     const total = preTotal +price ;
     preTotalElement.innerText = total;
+    console.log(total)
+    document.getElementById('button').addEventListener('click',function(){
+        const inputFieldElement = document.getElementById('inputFiled');
+        const inputFiled = inputFieldElement.value;
+        if(inputFiled ==='SELL200'){
+            const discount = total *0.20;
+            const disCountTotal = document.getElementById('discount');
+            disCountTotal.innerText=discount;
+            const disCountAmount = total -discount;
+            const afterDiscount = document.getElementById('afterDiscountTotal');
+            afterDiscount.innerText =disCountAmount;
+        
+        }
+        inputFieldElement.value = '';
+    })
 
 }
 
@@ -28,3 +43,4 @@ function getPrice (priceId){
     const price = parseFloat(priceString);
     return price;
 }
+
